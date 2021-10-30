@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<div class="form-container">
+  <h1> Upload Image </h1>
+  <h4> Local image or url </h4>
+  <form action="/upload_result" method="post" enctype="multipart/form-data" >
+
+    <input type="file" name="image" id="image" accept=".jpg, .jpeg, .png">
+    <script>
+      const fileSelector = document.getElementById('image');
+      fileSelector.addEventListener('change', (event) => {
+        const fileList = event.target.files;
+      });
+    </script>
+    <input type="text" name="url" placeholder="url">
+    <input type="submit" value="Upload">
+  </form>
+</div>
+{% endblock %}

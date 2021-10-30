@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+  <h1> List of images</h1>
+
+  <div class="flex-container">
+    {% for key, value in image_dict.items() %}
+        <div class="imageBlock center-flex">
+          <t>id: {{key}}</t>
+          <img id="picture" src="data:image/png;base64,{{ value.decode('utf-8') }}" >
+        </div>
+    {% endfor %}
+  </div>
+
+{% endblock %}
