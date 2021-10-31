@@ -50,7 +50,6 @@ body {
   flex-direction: column;
 }
 
-
 .grid-container {
   display: grid;
   justify-items: center;
@@ -63,7 +62,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
-
 
 img {
   
@@ -103,6 +101,7 @@ input[type=text] {
   border: 3px solid #555;
   border-radius: 4px;
 }
+
 input[type=file] {
   width: 80%;
   padding: 12px 20px;
